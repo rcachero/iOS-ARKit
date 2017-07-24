@@ -20,13 +20,26 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DkW-94-uoQ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mCS-XO-dT4">
+                                <rect key="frame" x="248" y="576" width="107" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="107" id="A9s-eu-RUx"/>
+                                    <constraint firstAttribute="height" constant="71" id="zET-lf-H8e"/>
+                                </constraints>
+                                <state key="normal" image="rampIcon"/>
+                                <connections>
+                                    <action selector="onRampBtnPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="kIm-dh-rCg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="DkW-94-uoQ" firstAttribute="leading" secondItem="vcO-tJ-WDk" secondAttribute="leading" id="0Br-0j-Bnb"/>
                             <constraint firstItem="DkW-94-uoQ" firstAttribute="trailing" secondItem="vcO-tJ-WDk" secondAttribute="trailing" id="37Z-Xq-OBg"/>
                             <constraint firstItem="DkW-94-uoQ" firstAttribute="bottom" secondItem="vcO-tJ-WDk" secondAttribute="bottom" id="5RZ-G3-hU5"/>
+                            <constraint firstItem="vcO-tJ-WDk" firstAttribute="trailing" secondItem="mCS-XO-dT4" secondAttribute="trailing" constant="20" id="IuI-Dl-U2P"/>
                             <constraint firstItem="DkW-94-uoQ" firstAttribute="top" secondItem="LMA-A0-zBZ" secondAttribute="top" id="Ymg-0i-hgH"/>
+                            <constraint firstItem="vcO-tJ-WDk" firstAttribute="bottom" secondItem="mCS-XO-dT4" secondAttribute="bottom" constant="20" id="r7o-XD-9sR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vcO-tJ-WDk"/>
                     </view>
@@ -39,4 +52,7 @@
             <point key="canvasLocation" x="116" y="123.68815592203899"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="rampIcon" width="107" height="71"/>
+    </resources>
 </document>
